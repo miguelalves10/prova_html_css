@@ -12,6 +12,11 @@ body {
 
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index para impedir do carrousel atravesar a header */
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -35,9 +40,13 @@ nav a {
     padding: 200px;
 }
 
+/* Centralizar todo os titulos */
+section h2 {
+    text-align: center;
+    padding-top: 50px;
+}
 
 .sobrenos {
-    /* padding-top: 300px; */
     justify-content: center;
     text-align: center;
     background-color: #e2e2e2;
@@ -46,28 +55,30 @@ nav a {
 
 .servicos {
     display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding: 150px;
 }
 
-
 .contato {
-
-    justify-content: center;
+    padding-top: 100px;
+    background-color: #e2e2e2;
 }
 
 form {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding-left: 530px;
     border-radius: 10px;
-    width: 300px;
+    width: 50%;
     flex-direction: column;
 }
 
+/* button */
 form div {
-    display: block;
-    align-items: center;
-    flex-direction: column;
-    padding-left: 300px;
+    padding-top: 10px;
+    border-radius: 5px;
 }
 
 label {
@@ -77,8 +88,4 @@ label {
 
 #mensagem {
     height: 100px;
-}
-
-button {
-    padding-top: 10px;
 }
